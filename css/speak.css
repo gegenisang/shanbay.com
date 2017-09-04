@@ -1,0 +1,388 @@
+* {
+    /* outline: 1px solid #ddd; */
+    box-sizing: border-box;
+}
+
+div,
+ul,
+li,
+a,
+form,
+input,
+span,
+i,
+img {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #209e85;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.navbar .nav-left,
+.navbar .nav-right {
+    display: inline-block;
+}
+
+.navbar .nav-left {
+    float: left;
+}
+
+.navbar .nav-right {
+    float: right;
+}
+
+.navbar .nav-left ul li,
+.navbar .nav-right ul li {
+    float: left;
+}
+
+.navbar li {
+    margin-right: 20px;
+    line-height: 50px;
+    position: relative;
+}
+
+.navbar a {
+    color: #f5f5f5;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 8px;
+}
+
+.navbar .nav-left a {
+    font-size: 16px;
+}
+
+.navbar .nav-right a {
+    font-size: 14px;
+}
+
+.navbar .nav-right form {
+    display: inline-block;
+    position: relative;
+    margin: 18px 20px 0;
+    background: transparent;
+    float: left;
+}
+
+
+/* .search-form {
+    color: #666;
+} */
+
+.search-form input {
+    width: 90px;
+    line-height: 20px;
+    padding: 4px 4px 4px 15px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #5bc5b0;
+    border-right: 0;
+    box-shadow: none;
+    transition: width .5s;
+    background-color: transparent;
+    color: #fff;
+}
+
+.search-form.focus input {
+    width: 160px;
+}
+
+.search-form.focus input,
+.search-form.focus .add-on {
+    border-color: #d5d5d5;
+    background-color: #fff;
+    color: #333;
+}
+
+.search-form .add-on {
+    padding: 7px 8px;
+    min-width: 16px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 0 20px 20px 0;
+    background-color: transparent;
+    border: 1px solid #5bc5b0;
+    border-left: none;
+    text-shadow: none;
+    display: inline-block;
+    margin-left: -5px;
+    line-height: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+/* .search-form input:focus+.add-on {
+    background-color: #fff;
+    border-left: none;
+    color: #999;
+    outline: none;
+} */
+
+.search-form .clear-btn {
+    position: absolute;
+    right: 30px;
+    top: 7px;
+    text-align: center;
+    border-radius: 0;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 16px;
+    height: 16px;
+    width: 20px;
+    border-right: 1px solid #bbb;
+    color: #bbb;
+}
+
+.navbar .nav-right ul,
+.navbar .nav-right .nav-user {
+    display: inline-block;
+}
+
+.navbar .nav-left .nav-brand {
+    text-align: left;
+}
+
+.navbar .nav-left .nav-brand img {
+    width: 100px;
+    margin-top: 4px;
+    margin-right: 40px;
+}
+
+.navbar .nav-right ul {
+    float: left;
+}
+
+.navbar .nav-right .nav-user {
+    display: inline-block;
+    float: left;
+    margin: 15px 0 0;
+    color: #fff;
+}
+
+.intro {
+    margin-top: 0px;
+    background-color: #eee;
+}
+
+.intro-brand {
+    line-height: 350px;
+    width: 100%;
+    background-color: #2f706e;
+    background-image: url(../img/speak/intro-brand.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-brand img {
+    width: 420px;
+    padding: 80px;
+}
+
+.intro-desc {
+    padding: 35px;
+    margin-top: 65px;
+    position: relative;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+}
+
+.title-section {
+    margin-bottom: 25px;
+}
+
+.intro .title-section:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.intro .title-section img {
+    width: 75px;
+    margin: 5px 0;
+    padding-right: 15px;
+    border-right: 1px solid #d8d8d8;
+    margin-right: 20px;
+}
+
+.intro .title-section .title-dec {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.intro .title-section .title-dec h4 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 12px 0 10px;
+}
+
+.intro .title-section .title-dec p {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+}
+
+.intro .download-section {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    width: 105px;
+    height: 135px;
+    overflow: hidden;
+}
+
+.intro .download-section img {
+    width: 96px;
+    position: absolute;
+    padding: 3px;
+    top: 105px;
+    left: 2px;
+    transition: top .5s;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 10px #eee;
+}
+
+.intro .download-section .download-section-content:hover img {
+    top: 0;
+}
+
+.intro .download-section a {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 2px;
+    bottom: 0;
+    position: absolute;
+    background-color: #29c192;
+    color: #fff;
+}
+
+.intro .mobile-preview {
+    position: absolute;
+    right: 135px;
+    width: 240px;
+    top: -41px;
+}
+
+.intro .mobile-preview img {
+    width: 100%;
+}
+
+.intro .mobile-preview .content {
+    position: absolute;
+    left: 9px;
+    top: 41px;
+    width: 194px;
+}
+
+.intro-course {
+    margin-top: 65px;
+    border-radius: 2px;
+    background-color: #fdfdfd;
+}
+
+.intro-title {
+    text-align: center;
+}
+
+.intro-title span {
+    position: relative;
+    display: inline-block;
+    padding: 5px 30px;
+    font-size: 14px;
+    border-radius: 9px 9px 0 0;
+    background-color: #fdfdfd;
+    color: #999;
+    top: -15px;
+}
+
+.intro-course-content {
+    padding: 35px 35px 45px;
+}
+
+.course-item {
+    margin-bottom: 30px;
+}
+
+.course-item h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin: 0 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.course-item h4 a {
+    color: #999;
+    font-size: 14px;
+    float: right;
+}
+
+.course-item h4 a i {
+    font-size: 18px;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.course-item .content-item {
+    float: left;
+    position: relative;
+    width: 46%;
+    margin-right: 8%;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    transition: box-shadow .3s;
+}
+
+.course-item .content-item:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+.course-item .content-item:hover {
+    box-shadow: 1px 1px 10px 1px #eee;
+}
+
+.course-item .content-item img {
+    width: 50%;
+    float: left;
+    border-radius: 5px 0 0 5px;
+}
+
+.course-item .content-item .dec {
+    float: right;
+    width: 50%;
+    padding: 20px;
+}
+
+.course-item .content-item .dec h5 {
+    color: #333;
+    font-size: 18px;
+    margin: 0;
+}
+
+.course-item .content-item .dec p {
+    color: #999;
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.course-item .content-item .dec .meta {
+    position: absolute;
+    bottom: 20px;
+    font-size: 12px;
+    color: #29c192;
+}
