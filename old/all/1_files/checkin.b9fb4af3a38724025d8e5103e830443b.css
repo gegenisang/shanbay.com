@@ -1,0 +1,235 @@
+.operation .comments-container {
+  margin-top: 5px;
+  display: none;
+}
+.operation .comments-container .checkin_comments #id_comment {
+  width: 98%;
+}
+.operation .comments-container .comments-list .comment {
+  margin: 10px 0;
+  position: relative;
+}
+.operation .comments-container .comments-list .comment .avatar {
+  margin-left: 0;
+  width: 40px;
+}
+.operation .comments-container .comments-list .comment .small {
+  font-size: 12px;
+  color: #aaa;
+}
+.operation .comments-container .comments-list .comment .content {
+  margin-left: 20px;
+}
+.operation .comments-container .comments-list .comment .reply-comment {
+  visibility: hidden;
+}
+.operation .comments-container .comments-list .comment:hover .reply-comment {
+  visibility: visible;
+}
+.operation .comments-container .comments-list .comment form {
+  margin: 5px 0 10px 0;
+}
+.operation .comments-container .comments-list .comment form textarea {
+  width: 98%;
+}
+.favors-container .favor {
+  padding: 5px 0;
+}
+.daily-quote-container {
+  margin-top: 40px;
+}
+.daily-quote-container .quote {
+  padding: 20px;
+  background: #f0f0f0;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: #CCC 2px 2px 8px;
+  border: none;
+}
+.daily-quote-container .quote blockquote {
+  padding: 0px;
+  border: none;
+  background: transparent;
+}
+.daily-quote-container .quote blockquote small {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #209E85;
+  float: right;
+}
+#promotion-block .span4 .page-header {
+  border-bottom: 1px solid #DDD;
+}
+#lady-blessing #icon-lady-blessing {
+  position: relative;
+  top: 33px;
+  padding-left: 25px;
+}
+#lady-blessing .lady-blessing-container-mouseenter {
+  background-color: #DDD;
+}
+#lady-blessing .lady-blessing-container-mouseleave {
+  background-color: #EEE;
+}
+#lady-blessing #lady-blessing-container {
+  cursor: pointer;
+  border: 1px solid #CCC;
+  margin-top: -30px;
+  border-radius: 5px;
+  padding: 10px 60px;
+}
+#lady-blessing #lady-blessing-container #lady-avatar {
+  margin-left: 150px;
+}
+#lady-blessing #lady-blessing-container #lady-blessing-content {
+  font-size: 20px;
+  font-weight: bold;
+  color: #209E85;
+  margin-top: 20px;
+}
+#checkin-box a:hover {
+  text-decoration: none;
+}
+#checkin-box .message {
+  font-size: 20px;
+  margin: 10px 0;
+}
+#checkin-box .tasks {
+  margin-left: 0px;
+  list-style: none;
+}
+#checkin-box .tasks li {
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+#checkin-box .tasks li a .icon-ok {
+  color: #209e85;
+  font-size: 18px;
+}
+#checkin-box .user-note {
+  padding: 10px;
+  color: #209E85;
+  font-size: 15px;
+}
+.checkin_days_container {
+  position: relative;
+}
+.checkin_days_container #checkin-header-img {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+}
+.checkin_days_container .checkin_days_content {
+  background: url('../img/slash.png');
+  padding: 50px;
+  border: 1px solid #CCCCCC;
+}
+.checkin_days_container .checkin_days_content h1 {
+  width: 15%;
+  font-size: 64px;
+  float: left;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 1;
+  color: inherit;
+  letter-spacing: -1px;
+}
+.checkin_days_container .checkin_days_content h1 .unit {
+  font-size: 10px;
+  color: #209e85;
+}
+.checkin_days_container .checkin_days_content h1 .big_number {
+  color: #209e85;
+}
+.checkin_days_container .checkin_days_content h1 small {
+  display: block;
+  margin-bottom: 5px;
+}
+#user-checkin-note-avatar {
+  margin-left: 0;
+}
+#share-result {
+  text-align: center;
+}
+#share-result .spinner {
+  display: inline-block;
+}
+body.certificate {
+  width: 100%;
+  background: #FFF;
+  padding: 0;
+}
+body.certificate .logo {
+  width: 64px;
+}
+body.certificate #checkins {
+  background: #209E85;
+  color: #FFF;
+  padding: 20px;
+}
+body.certificate #checkins .user {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+body.certificate #checkins .days {
+  text-align: center;
+  text-size: 0.8em;
+  margin-top: 20px;
+}
+body.certificate #checkins .days .number {
+  font-size: 5em;
+  font-weight: bold;
+}
+body.certificate #stats {
+  text-align: center;
+  background: #EEE;
+  padding: 5px;
+}
+body.certificate #stats .item {
+  display: inline-block;
+  width: 60px;
+}
+body.certificate #stats .number {
+  font-size: 2em;
+  font-weight: normal;
+  color: #209E85;
+}
+body.certificate #badges {
+  margin-top: 10px;
+  color: #777;
+}
+body.certificate #badges .title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+body.certificate #badges .badge {
+  color: #AAA;
+  background: #FFF;
+  margin-left: 10px;
+  width: 60px;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  font-weight: normal;
+}
+body.certificate #badges .badge img {
+  width: 64px;
+}
+body.certificate #quote {
+  background: #EEE;
+  padding: 20px;
+  line-height: 1.6em;
+}
+body.certificate #apps {
+  background: #209E85;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+body.certificate #apps a {
+  color: #FFF;
+}

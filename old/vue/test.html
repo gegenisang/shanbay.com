@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 900px;
+      height: 460px;
+      background: green;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .d1,
+    .d2 {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+
+    .d1 {
+      background: red;
+      left: 0;
+    }
+
+    .d2 {
+      background: blue;
+      right: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="d1"></div>
+    <div class="d2"></div>
+  </div>
+
+</body>
+
+</html>

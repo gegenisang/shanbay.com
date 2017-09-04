@@ -1,0 +1,373 @@
+body .gradient-bar {
+  margin-bottom: 20px;
+  height: 22px;
+  display: block;
+  background: url(../img/gradient2.png);
+}
+body .main-body.container {
+  padding-top: 30px;
+  background-color: transparent;
+}
+body .main-body .noty_theme_default {
+  padding: 10px 0;
+}
+body .main-body .noty_layout_top {
+  position: relative;
+}
+body .main-body #notification-container .noty_theme_default {
+  background-image: none;
+  margin-bottom: 10px;
+  z-index: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: #CCC 2px 2px 8px;
+  border: none;
+}
+body .main-body #notification-container .noty_theme_default .noty_message {
+  list-style: none;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: left;
+  padding: 2px 12px;
+}
+body .main-body #notification-container .noty_theme_default .noty_message li {
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+body .main-body #notification-container .noty_theme_default .noty_message li a {
+  color: #209E85;
+}
+body .main-body .tasks-outer-container .checkin-title .page-header {
+  padding: 0;
+  margin-left: 0;
+  text-align: center;
+}
+body .main-body .tasks-outer-container .checkin-title .page-header #checkin-days {
+  color: #209E85;
+}
+body .main-body .tasks-outer-container .checkin-form textarea {
+  width: 100%;
+}
+body .main-body .tasks-outer-container .checkin-form #user-checkin-note-avatar {
+  padding-left: 20px;
+}
+body .main-body .tasks-outer-container .checkin-form #checkin_button {
+  padding: 10px 40px;
+  font-size: 20px;
+}
+body .main-body .tasks-outer-container .punch-intro-container {
+  padding-top: 40px;
+  font-size: 18px;
+  color: #ccc;
+}
+body .main-body .tasks-outer-container .punch-intro-container a {
+  color: #888;
+}
+body .main-body .tasks-outer-container .punch-intro-container a:hover {
+  color: #209E85;
+}
+body .main-body .tasks-outer-container .tasks-container .task {
+  height: 270px;
+  cursor: pointer;
+  background-color: #F0F0F0;
+  border-radius: 5px;
+  box-shadow: #CCC 2px 2px 8px;
+}
+body .main-body .tasks-outer-container .tasks-container .task:hover {
+  box-shadow: #aaa 2px 2px 8px;
+}
+body .main-body .tasks-outer-container .tasks-container .task .loading-spinner-container {
+  position: relative;
+  left: 50%;
+  top: 40%;
+  display: block;
+}
+body .main-body .tasks-outer-container .tasks-container .task .loading-spinner-container p {
+  font-size: 16px;
+  margin-left: -25px;
+  margin-top: 20px;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-top {
+  background: white;
+  border-radius: 5px 5px 0 0;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-top .task-name {
+  padding: 39px 45px;
+  text-align: center;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-top .task-name .task-name-cn {
+  font-size: 35px;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-top .task-name .join-plan-link {
+  top: -20px;
+  left: 15px;
+  position: relative;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-start {
+  color: #7c8a8a;
+  font-size: 20px;
+  line-height: 1.2em;
+  text-align: center;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-start .icon-ok {
+  padding-right: 10px;
+  color: #209E85;
+  font-weight: bold;
+  font-size: 25px;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-stats {
+  padding: 10px;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-stats .task-num {
+  text-align: center;
+  position: relative;
+  top: 16px;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-stats .task-num .task-num-finished-container,
+body .main-body .tasks-outer-container .tasks-container .task .task-stats .task-num .task-num-total-container {
+  display: inline-block;
+  width: 40%;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-stats .task-num .task-num-total,
+body .main-body .tasks-outer-container .tasks-container .task .task-stats .task-num .task-num-finished {
+  font-size: 35px;
+  font-weight: bold;
+  color: #209e85;
+  line-height: 1em;
+}
+body .main-body .tasks-outer-container .tasks-container .task hr {
+  margin: 18px;
+  border-top: 1px solid #ccc;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-bottom {
+  padding-top: 20px;
+  height: 62%;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-bottom .task-detail {
+  padding: 0 20px;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-bottom .task-detail .task-detail-title {
+  color: #7c8a8a;
+  font-size: 16px;
+  font-weight: bold;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-bottom .task-detail .task-intro {
+  padding: 0px 30px 30px 30px;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-bottom .task-detail .task-intro p.task-intro-icon {
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 20px;
+  color: #CCC;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-bottom .task-detail .task-intro span.task-intro-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-bottom .task-detail hr {
+  border-top: 1px solid #CCC;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-bottom .task-detail .task-start {
+  text-align: center;
+  font-size: 25px;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-icon-container {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-icon-container.finished-icon-container {
+  color: #209E85;
+}
+body .main-body .tasks-outer-container .tasks-container .task .task-icon-container.plus-icon-container {
+  color: #bbb;
+}
+body .main-body .tasks-outer-container .checkin-container {
+  padding-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-container-outer {
+  background-color: #f4f4f4;
+  border-radius: 3px;
+  box-shadow: #CCC 2px 2px 8px;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-container-outer:hover {
+  box-shadow: #AAA 2px 2px 8px;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-container-outer .icon-sina-weibo-round {
+  color: #D34D4C;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-container-outer .icon-qq-round {
+  color: #2CA5C7;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-container-outer .icon-douban-round {
+  color: #4DAF7C;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-container-outer .icon-renren-round {
+  color: #5D90AF;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-container-outer .icon-tencent-weibo-round {
+  color: #2BB5DC;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-container-outer.no-promotion #checkin-container-inner {
+  border-right: none;
+}
+body .main-body .tasks-outer-container .checkin-container #associate-promotion {
+  margin-left: 10px;
+}
+body .main-body .tasks-outer-container .checkin-container #associate-promotion #associate-promotion-container {
+  position: relative;
+}
+body .main-body .tasks-outer-container .checkin-container #associate-promotion #associate-promotion-container #promotion-header {
+  font-size: 24px;
+  padding: 22px 15px;
+}
+body .main-body .tasks-outer-container .checkin-container #associate-promotion #associate-promotion-container #promotion-sharing-container {
+  font-size: 22px;
+  margin-top: 10px;
+  float: right;
+}
+body .main-body .tasks-outer-container .checkin-container #associate-promotion #associate-promotion-container #promotion-sharing-container i {
+  cursor: pointer;
+}
+body .main-body .tasks-outer-container .checkin-container #associate-promotion #associate-promotion-container #promotion-info-container {
+  padding-left: 15px;
+}
+body .main-body .tasks-outer-container .checkin-container #associate-promotion #associate-promotion-container #promotion-info-container #promotion-name {
+  font-size: 20px;
+  color: #209e85;
+}
+body .main-body .tasks-outer-container .checkin-container #associate-promotion #associate-promotion-container #promotion-info-container #promotion-description {
+  white-space: pre-wrap;
+  line-height: 1.3;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+body .main-body .tasks-outer-container .checkin-container #associate-promotion #associate-promotion-container #promotion-logo {
+  padding-left: 15px;
+  max-width: 105px;
+  min-height: 100px;
+}
+body .main-body .tasks-outer-container .checkin-container #associate-promotion #associate-promotion-container #promotion-link-container {
+  float: right;
+}
+body .main-body .tasks-outer-container .checkin-container #associate-promotion #associate-promotion-container #promotion-link-container img {
+  padding-left: 10px;
+  width: 32px;
+}
+body .main-body .tasks-outer-container .checkin-container #checkin-container-inner {
+  min-height: 220px;
+  margin-right: 10px;
+  border-right: 1px solid #ddd;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-title .span8 {
+  border-radius: 3px;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-note {
+  font-size: 18px;
+  margin-bottom: 0;
+  padding: 10px;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-note blockquote {
+  margin: 0;
+  border-left: none;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-note blockquote p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-note blockquote small {
+  float: right;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-head-container {
+  padding: 20px;
+}
+body .main-body .tasks-outer-container .checkin-container .note {
+  margin-bottom: 10px;
+}
+body .main-body .tasks-outer-container .checkin-container .note .user-checkin-note-angle {
+  width: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid #DDD;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: absolute;
+  left: -20px;
+  top: 10px;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin_user_note_container {
+  background: #DDD;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-share {
+  position: relative;
+  margin-bottom: 10px;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-share i {
+  font-size: 36px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+body .main-body .tasks-outer-container .checkin-container .checkin-share #share-hint {
+  position: absolute;
+  font-size: 13px;
+}
+body .main-body .tasks-outer-container .checkin-promotion-header .span12 {
+  border-top: 3px solid #CCC;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+body .main-body .tasks-outer-container .checkin-promotion-header .span12 p {
+  font-size: 20px;
+}
+body .main-body .tasks-outer-container .checkin-daily-promotion {
+  margin-top: 20px;
+}
+body .main-body .tasks-outer-container .checkin-daily-promotion .span2 .promotion-item-title {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+}
+body .main-body .tasks-outer-container .checkin-daily-promotion .span2 .promotion-book-container {
+  padding-left: 40px;
+  padding-top: 10px;
+}
+body .main-body .tasks-outer-container .checkin-daily-promotion .span2 .promotion-item-container {
+  cursor: pointer;
+  height: 160px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: #CCC 1px 2px;
+  text-align: center;
+  vertical-align: bottom;
+}
+body .main-body .tasks-outer-container .checkin-daily-promotion .span2 .promotion-item-container img {
+  margin-top: 20px;
+}
+body .main-body .tasks-outer-container .checkin-daily-promotion .span2 .promotion-item-container i {
+  font-size: 120px;
+  color: #209E85;
+}
+body .main-body .tasks-outer-container .checkin-daily-promotion .span2 .promotion-item-container p {
+  font-size: 20px;
+}
+body .main-body .tasks-outer-container .checkin-daily-promotion .span2 .promotion-item-container:hover {
+  box-shadow: #CCC 2px 3px;
+}
+body .main-body .tasks-outer-container .checkin-daily-promotion .span2 .promotion-item-container:hover i {
+  font-size: 122px;
+}
+.with-speak .span3 {
+  margin-left: 20px;
+  width: 218px;
+}
+.with-speak .span3:first-child {
+  margin-left: 30px;
+}
+.with-speak .join-plan-link {
+  left: 25px !important;
+}

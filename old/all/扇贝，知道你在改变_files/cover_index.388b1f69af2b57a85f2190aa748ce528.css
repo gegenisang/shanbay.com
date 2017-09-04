@@ -1,0 +1,211 @@
+body {
+  background: #fdfdfd;
+}
+.home-unlogin {
+  font-size: 14px;
+}
+.home-unlogin-header a {
+  text-decoration: none;
+}
+.home-unlogin-header .top-header {
+  margin-top: 10px;
+  margin-right: 25px;
+  height: 25px;
+}
+.home-unlogin-header .top-header a {
+  color: #333;
+}
+.home-unlogin-header .top-header span {
+  color: #999;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 25px;
+}
+.home-unlogin-header .top-header .login-btn {
+  border: 1px solid #333;
+  border-radius: 13px;
+  padding: 3px 20px;
+  line-height: 25px;
+}
+.home-unlogin-header img {
+  width: 130px;
+  margin: 20px 0 15px;
+}
+.home-unlogin-header .home-links {
+  height: 45px;
+}
+.home-unlogin-header .home-links a {
+  color: #666;
+  width: 75px;
+  line-height: 45px;
+  display: inline-block;
+  transition: font-size 0.2s;
+  font-size: 16px;
+  vertical-align: middle;
+}
+.home-unlogin-header .home-links a:hover,
+.home-unlogin-header .home-links a.active {
+  font-size: 18px;
+}
+.home-unlogin-body .carousel {
+  margin: 0 25px;
+}
+.home-unlogin-body .carousel .text-desc {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 200px;
+  left: 100px;
+  position: absolute;
+}
+.home-unlogin-body .carousel .text-desc p {
+  margin: 0 0 5px;
+  font-size: 16px;
+  line-height: 1.1;
+}
+.home-unlogin-body .carousel .text-desc h4 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+.home-unlogin-body .carousel .text-desc .download-btn {
+  padding: 8px 30px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  margin-top: 50px;
+  display: inline-block;
+  color: inherit;
+}
+.home-unlogin-body .carousel .item {
+  cursor: pointer;
+}
+.home-unlogin-body .carousel .cover-bdc {
+  color: #145f57;
+}
+.home-unlogin-body .carousel .cover-bdc .download-btn {
+  border-color: #145f57;
+}
+.home-unlogin-body .carousel .cover-speak {
+  color: #fff;
+}
+.home-unlogin-body .carousel .cover-listen {
+  color: #804500;
+}
+.home-unlogin-body .carousel .cover-listen .download-btn {
+  border-color: #804500;
+}
+.home-unlogin-body .carousel .cover-news {
+  color: #0078a5;
+}
+.home-unlogin-body .carousel .cover-news .download-btn {
+  border-color: #0078a5;
+}
+.home-unlogin-body .carousel .cover-book {
+  color: #fff;
+}
+.home-unlogin-body .carousel .cover-sentence {
+  color: #165c5f;
+}
+.home-unlogin-body .carousel .cover-sentence .download-btn {
+  border-color: #165c5f;
+}
+.home-unlogin-body .carousel-control {
+  background: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  width: 20px;
+  height: 66px;
+  opacity: 1;
+  top: 50%;
+  margin-top: -33px;
+}
+.home-unlogin-body .carousel-control.left {
+  left: -40px;
+  background-image: url(https://static.baydn.com/media/media_store/image/a5c71e1fe995e2979058b3e780dd88e9.png);
+}
+.home-unlogin-body .carousel-control.right {
+  right: -40px;
+  background-image: url(https://static.baydn.com/media/media_store/image/ee0204d6a83d3441b98334b87958524d.png);
+}
+.home-unlogin-body .carousel-indicators {
+  left: 0;
+  right: 0;
+  top: auto;
+  bottom: 0;
+  margin: auto;
+  width: 120px;
+  padding: 15px 0;
+}
+.home-unlogin-body .carousel-indicators li {
+  margin-left: 8px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #f5f5f5;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+.home-unlogin-body .carousel-indicators li:hover,
+.home-unlogin-body .carousel-indicators li.active {
+  background: #f5f5f5;
+}
+.home-unlogin-body .home-unlogin-desc {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.home-unlogin-body .home-unlogin-desc img {
+  position: absolute;
+  transition: top 0.2s;
+}
+.home-unlogin-body .home-unlogin-desc .item div {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.home-unlogin-body .home-unlogin-desc .item p {
+  color: #666;
+  margin: 0 0 5px;
+}
+.home-unlogin-body .home-unlogin-desc h4 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #333;
+  margin: 30px 0;
+}
+.home-unlogin-body .home-unlogin-desc .cover-test-wrap {
+  background: url(https://static.baydn.com/media/media_store/image/f5b2be41f407b458898c0137116117c1.png);
+}
+.home-unlogin-body .home-unlogin-desc .cover-test-wrap img {
+  left: 19px;
+  width: 73px;
+  top: 0;
+}
+.home-unlogin-body .home-unlogin-desc .cover-test-wrap:hover img {
+  top: -3px;
+}
+.home-unlogin-body .home-unlogin-desc .cover-insurance-wrap {
+  background: url(https://static.baydn.com/media/media_store/image/a49e616954cdece336362c91492d4f61.png);
+}
+.home-unlogin-body .home-unlogin-desc .cover-insurance-wrap img {
+  left: -5px;
+  width: 95px;
+  top: -8px;
+}
+.home-unlogin-body .home-unlogin-desc .cover-insurance-wrap:hover img {
+  top: -11px;
+}
+.home-unlogin-body .home-unlogin-desc .cover-community-wrap {
+  background: url(https://static.baydn.com/media/media_store/image/5331e9ad9e2fd1213c91bca73c49e5e4.png);
+}
+.home-unlogin-body .home-unlogin-desc .cover-community-wrap img {
+  left: 14px;
+  width: 54px;
+  top: 0;
+}
+.home-unlogin-body .home-unlogin-desc .cover-community-wrap:hover img {
+  top: -3px;
+}

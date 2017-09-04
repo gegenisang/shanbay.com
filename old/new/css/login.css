@@ -1,0 +1,369 @@
+* {
+    /* outline: 1px solid #ddd; */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    color: #333;
+}
+
+div,
+a,
+img,
+p,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+#login-page .navbar {
+    background-color: #209e85;
+    border-radius: 0;
+}
+
+#login-page .navbar a {
+    color: #f5f5f5;
+    transition: color 0.2s;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: #209e85;
+    color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand img {
+    width: 8.4rem;
+    margin-right: 4rem;
+    vertical-align: middle;
+    margin-top: -5px;
+    /* padding-top: 0.3rem; */
+}
+
+.login-content {
+    width: 900px;
+    height: 560px;
+    margin: 100px auto;
+    background-color: #fdfdfd;
+    border-radius: 4px;
+    box-shadow: 0 8px 8px 0 rgba(51, 51, 51, .05), 0 0 8px 0 rgba(51, 51, 51, .15);
+}
+
+.left {
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    background-color: #f6f6f6;
+}
+
+.carousel-inner {
+    width: 450px;
+    height: 560px;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-indicators {
+        bottom: 20%;
+    }
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #cacaca;
+    border: 1px solid #cacaca;
+    border-radius: 10px;
+}
+
+.carousel-indicators .active {
+    width: 7px;
+    height: 7px;
+    margin: 1px;
+    border: 1px solid #229e85;
+    background-color: #229e85;
+}
+
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+    display: block;
+    max-width: 225px;
+    height: auto;
+    margin: 50px auto;
+}
+
+.carousel-caption {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+    text-align: center;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    margin: 0;
+}
+
+.carousel-inner .item .carousel-caption h3 {
+    color: #333;
+    font-size: 1.3em;
+}
+
+.carousel-inner .item .carousel-caption p {
+    color: #666;
+    font-size: 1em;
+}
+
+.right {
+    width: 50%;
+    padding: 0 70px;
+    height: 560px;
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+}
+
+.right h3 {
+    padding-top: 50px;
+    color: #333;
+    font-size: 28px;
+}
+
+.login-form {
+    position: relative;
+    margin: 0 auto;
+}
+
+.input-wrap {
+    height: 46px;
+    margin: 25px auto;
+    color: #999;
+}
+
+.input-wrap input {
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+}
+
+.input-wrap .user-icon {
+    position: absolute;
+    top: 6px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    left: .3em;
+    background-image: url(../img/index/user.png);
+    background-repeat: no-repeat;
+    font-size: 22px;
+    line-height: 46px;
+}
+
+
+/* .input-wrap:focus .user-icon {
+    background-image: url(../img/index/user-selected.png);
+    background-repeat: no-repeat;
+  } */
+
+input:focus {
+    outline: none !important;
+    border-color: #229e85;
+}
+
+input:focus+.user-icon {
+    background-image: url(../img/index/user-selected.png);
+    background-repeat: no-repeat;
+}
+
+#password,
+#two {
+    position: relative;
+}
+
+#password .lock-icon,
+#two .lock-icon {
+    position: absolute;
+    left: .4em;
+    top: 6px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/index/lock.png);
+    background-repeat: no-repeat;
+}
+
+#password input:focus+.lock-icon,
+#two input:focus+.lock-icon {
+    background-image: url(../img/index/lock-selected.png);
+    background-repeat: no-repeat;
+}
+
+.captcha {
+    position: relative;
+}
+
+.captcha .captcha-icon {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top: 6px;
+    left: .3em;
+    background-image: url(../img/index/secure.png);
+    background-repeat: no-repeat;
+}
+
+.captcha input:focus+.captcha-icon {
+    background-image: url(../img/index/secure-success.png);
+    background-repeat: no-repeat;
+}
+
+.captcha input {
+    position: absolute;
+    left: 0;
+    height: 46px;
+    width: 67%;
+}
+
+.captcha img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 90px;
+    height: 46px;
+    cursor: pointer;
+}
+
+.register-text {
+    float: left;
+    color: #999;
+    text-decoration: none;
+    margin-top: -10px;
+}
+
+.register-text span {
+    color: #229e85;
+}
+
+.forget {
+    float: right;
+    margin-top: -10px;
+    color: #229e85;
+}
+
+.forget:hover,
+.register-text:hover span {
+    color: #229e85;
+    text-decoration: none;
+}
+
+.register-text:hover {
+    color: #999;
+    text-decoration: none
+}
+
+.submit-box {
+    position: relative;
+    margin: 20px 0 70px;
+}
+
+.button {
+    width: 100%;
+    line-height: 1.6;
+    background: #23b598;
+    box-shadow: 0 4px 15px 0 rgba(36, 181, 151, .3);
+    padding: 5px 20px;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+    background: #209e85;
+}
+
+.button.disable,
+.button.disable:hover,
+.button[disabled=disabled],
+.button[disabled=disabled]:hover {
+    background: #eee;
+    color: #bebebe;
+    border: 1px solid transparent;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.third-title {
+    position: relative;
+    text-align: center;
+    color: #cacaca;
+}
+
+.third-title:before {
+    left: 0;
+    right: 60%;
+}
+
+.third-title:after,
+.third-title:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 48%;
+    border-top: 1px solid #cacaca;
+}
+
+.third-title:after {
+    right: 0;
+    left: 60%;
+}
+
+.third-wrap {
+    width: 50%;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    float: left;
+}
+
+.third-wrap i {
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin: 0 auto 10px auto;
+}
+
+#weixin .weixin-icon {
+    background-image: url(../img/index/weixin.png);
+    background-repeat: no-repeat;
+}
+
+#weixin .weixin-icon:hover {
+    background-image: url(../img/index/weixin-selected.png);
+    background-repeat: no-repeat;
+}
+
+#weibo .weibo-icon {
+    background-image: url(../img/index/weibo.png);
+    background-repeat: no-repeat;
+}
+
+#weibo .weibo-icon:hover {
+    background-image: url(../img/index/weibo-selected.png);
+    background-repeat: no-repeat;
+}
