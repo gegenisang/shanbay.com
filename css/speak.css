@@ -79,14 +79,10 @@ a:hover {
     float: left;
 }
 
-
-/* .search-form {
-    color: #666;
-} */
-
 .search-form input {
     width: 90px;
     line-height: 20px;
+    z-index: 1;
     padding: 4px 4px 4px 15px;
     border-radius: 20px 0 0 20px;
     border: 1px solid #5bc5b0;
@@ -102,10 +98,15 @@ a:hover {
 }
 
 .search-form.focus input,
+.search-form.focus input::placeholder,
 .search-form.focus .add-on {
     border-color: #d5d5d5;
     background-color: #fff;
     color: #333;
+}
+
+.search-form input::placeholder {
+    color: #fff;
 }
 
 .search-form .add-on {
@@ -136,11 +137,11 @@ a:hover {
 .search-form .clear-btn {
     position: absolute;
     right: 30px;
-    top: 7px;
+    top: 9px;
     text-align: center;
     border-radius: 0;
     cursor: pointer;
-    z-index: 2;
+    z-index: 1000;
     line-height: 16px;
     height: 16px;
     width: 20px;
