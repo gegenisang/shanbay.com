@@ -11,3 +11,10 @@ $("#uptoTopBtn").click(function () {
     scrollTop: 0
   }, 0);
 });
+
+
+
+$(".nav li").click(function () {
+  $(".nav li").removeClass("active");
+  $(this).addClass("active");
+});
