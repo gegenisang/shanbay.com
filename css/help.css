@@ -1,0 +1,88 @@
+div,
+nav,
+ul,
+li,
+a,
+i,
+span,
+form,
+input {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  outline: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.header-section {
+  height: 50px;
+  line-height: 50px;
+  background-color: #209e85;
+}
+
+.help-page {
+  background-color: #eee;
+}
+
+.help-title {
+  line-height: 3em;
+}
+
+.help-content {
+  background-color: #fff;
+  padding: 100px 40px;
+  padding-bottom: 200px;
+}
+
+.list ul li {
+  text-indent: 20px;
+}
+
+.navbar-brand img {
+  width: 100px;
+  margin-top: -10px;
+  margin-right: 40px;
+}
+
+.navbar-form {
+  float: left;
+}
+
+.navbar-form {
+  margin-top: -3px;
+}
+
+.form-control {
+  display: block;
+  /* width: 70%; */
+  width: 80px;
+  height: 34px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: rgb(85, 85, 85);
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset;
+  padding: 6px 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-image: initial;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
