@@ -6,10 +6,177 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册</title>
     <link rel="shortcut icon" href="img/shanbay_favicon.png">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
 </head>
 
 <body>
+    <div id="header-section">
+        <nav class="navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                  </button>
+                            <a href="#" class="navbar-brand">
+                                <img src="img/logo_v4.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li>
+                                    <a href="#">首页</a>
+                                </li>
+                                <li>
+                                    <a href="#">单词</a>
+                                </li>
+                                <li>
+                                    <a href="#">听力</a>
+                                </li>
+                                <li>
+                                    <a href="#">口语</a>
+                                </li>
+                                <li>
+                                    <a href="#">新闻</a>
+                                </li>
+                                <li>
+                                    <a href="#">读书</a>
+                                </li>
+                                <li>
+                                    <a href="#">炼句</a>
+                                </li>
+                                <li>
+                                    <a href="#">课程</a>
+                                </li>
+                                <li>
+                                    <a href="#">社区</a>
+                                </li>
+                            </ul>
+                            <div class="navbar-right">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">帮助</a></li>
+                                </ul>
+                                <div class="nav-user">
+                                    <a href="#">登录</a>
+                                    <span>·</span>
+                                    <a href="#">注册</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="register-page container">
+        <div class="register-box">
+            <div class="silde">
+                <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+                    <!-- <div id="carousel-generic" class="carousel slide" data-ride=""> -->
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-generic" data-slide-to="1"></li>
+                        <li data-target="#carouselgeneric" data-slide-to="2"></li>
+                        <li data-target="#carousel-generic" data-slide-to="3"></li>
+                    </ol>
 
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/intro-client-checkin.png" alt="intro-client-checkin">
+                            <div class="carousel-caption">
+                                <h3>坚持打卡</h3>
+                                <p>享受学习的快乐</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/intro-client-community.png" alt="intro-client-community">
+                            <div class="carousel-caption">
+                                <h3>学习社区</h3>
+                                <p>加入小组，和小伙伴们一起坚持</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/intro-client-insurance.png" alt="intro-client-insurance">
+                            <div class="carousel-caption">
+                                <h3>考试保险</h3>
+                                <p>备考用扇贝，没过就赔钱</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/intro-client-academy.png" alt="intro-client-academy">
+                            <div class="carousel-caption">
+                                <h3>扇贝课程</h3>
+                                <p>更少的时间，更好的效果</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="register-content">
+                <h2>欢迎来到扇贝</h2>
+                <form>
+                    <div class="inner-wrap">
+                        <input type="text" placeholder="用户名">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="inner-wrap">
+                        <input type="text" placeholder="Email 地址">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="inner-wrap">
+                        <input type="text" placeholder="密码">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                    </div>
+                    <div class="inner-wrap">
+                        <input type="text" placeholder="确认密码">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                    </div>
+                    <div class="inner-wrap captcha" name="code">
+                        <input type="text" placeholder="验证码（不区分大小写）">
+                        <i class="fa fa-shield" aria-hidden="true"></i>
+                        <img src="https://www.shanbay.com/captcha/image/9367ab96302dbb2e7322981955040d4b89991b27/" alt="captcha">
+                    </div>
+                    <div class="terms-box">
+                        <span class="checkbox-box">
+                            <input type="checkbox" checked class="terms-checkbox">
+                            <i class="fa fa-check check-icon" aria-hidden="true"></i>
+                        </span>
+                        <span>
+                                我已阅读并同意扇贝网的
+                                <a href="#">使用协议</a>
+                        </span>
+                    </div>
+                </form>
+                <div class="submit-btn-box">
+                    <button class="button submit-btn">确认注册</button>
+                </div>
+                <div class="third-party-title">
+                    OR
+                </div>
+                <div class="third-party-wrap">
+                    <a href="#">
+                        <i class="fa fa-weixin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="third-party-wrap">
+                    <a href="#">
+                        <i class="fa fa-weibo" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

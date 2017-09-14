@@ -12,11 +12,20 @@ gulp.task('img', function() {
     return gulp.src(paths.src + "/img/**/*")
         .pipe(gulp.dest(paths.dist + "/img"));
 });
+
+
+gulp.task('lib', function() {
+    return gulp.src("bower_components/**/*")
+        .pipe(gulp.dest(paths.dist + "/bower_components"));
+});
+
 gulp.task("sass", function() {
     return gulp.src(paths.sass + "/**/*.scss")
-        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        // .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(paths.dist + '/css'));
 });
+
 gulp.task("html", function() {
     return gulp.src(paths.src + "/*.html")
         .pipe(htmlmin({ collapseWhitespace: true }))
