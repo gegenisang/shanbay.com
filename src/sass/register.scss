@@ -1,9 +1,4 @@
 @import "base";
-* {
-    outline: 1px solid #ddd;
-    box-sizing: border-box;
-}
-
 body {
     background-color: #eee;
     color: #333;
@@ -187,14 +182,14 @@ body {
                     }
                 }
                 .terms-box {
+                    text-align: left;
+                    font-size: 14px;
+                    color: #999;
                     .checkbox-box {
                         margin-right: 10px;
                         vertical-align: middle;
                         display: inline-block;
                         position: relative;
-                        // text-align: left;
-                        // font-size: 14px;
-                        // color: #999;
                         input {
                             position: absolute;
                             top: 0;
@@ -208,17 +203,96 @@ body {
                                 border-color: transparent;
                                 color: #fff;
                             }
-                            .check-icon {
-                                display: block;
-                                width: 20px;
-                                border: 1px solid #cacaca;
-                                font-size: 18px;
-                                line-height: 18px;
-                                font-weight: 700;
-                                opacity: 0;
-                            }
+                        }
+                        .check-icon {
+                            display: block;
+                            width: 20px;
+                            border: 1px solid #cacaca;
+                            font-size: 18px;
+                            line-height: 18px;
+                            font-weight: 700;
+                            color: #fdfdfd;
                         }
                     }
+                    span {
+                        color: #999;
+                        a {
+                            color: #24b598;
+                            padding: 0 5px;
+                        }
+                    }
+                }
+                .submit-btn-box {
+                    position: relative;
+                    padding: 20px 0 50px;
+                    .button {
+                        width: 100%;
+                        background-color: #23b598;
+                        line-height: 1.6;
+                        padding: 5px 20px;
+                        box-shadow: 0 4 15px 0 rgba(36, 181, 151, 0.3);
+                        border: 1px solid transparent;
+                        border-radius: 2px;
+                        color: #fff;
+                        &.disable {
+                            background-color: #eee;
+                            color: #bebebe;
+                            border: 1px solid transparent;
+                            cursor: not-allowed;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+            .third-party-title {
+                position: relative;
+                color: #cacaca;
+                text-align: center;
+                &:before {
+                    right: 60%;
+                    left: 0;
+                }
+                &:after {
+                    left: 60%;
+                    right: 0;
+                }
+                &:after,
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    top: 48%;
+                    border-top: 1px solid #cacaca;
+                }
+            }
+            .third-party-wrap {
+                display: inline-block;
+                position: relative;
+                text-align: center;
+                font-size: 12px;
+                margin-top: 15px;
+                width: 50%;
+                a {
+                    display: inline-block;
+                    i {
+                        margin-bottom: 10px;
+                        width: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        font-size: 24px;
+                        border-radius: 100em;
+                        background: #dcdcdc;
+                        color: #fff;
+                        &.fa-weixin:hover {
+                            background: #68b560;
+                        }
+                        &.fa-weibo:hover {
+                            background: #d34d4c;
+                        }
+                    }
+                }
+                p {
+                    color: #999;
                 }
             }
         }
