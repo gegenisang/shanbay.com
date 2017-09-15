@@ -1,6 +1,26 @@
 * {
-    // outline: 1px solid #ddd;
+    outline: 1px solid #ddd;
     box-sizing: border-box;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+i,
+input,
+form,
+img,
+nav,
+header,
+footer {
+    padding: 0;
+    margin: 0;
 }
 
 li {
