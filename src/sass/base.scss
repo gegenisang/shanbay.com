@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid #ddd;
+    // outline: 1px solid #ddd;
     box-sizing: border-box;
 }
 
@@ -13,6 +13,9 @@ h6,
 p,
 span,
 i,
+ul,
+i,
+li,
 input,
 form,
 img,
@@ -34,4 +37,8 @@ a {
 a:focus,
 a:hover {
     text-decoration: none;
+}
+
+i {
+    font-style: normal;
 }
