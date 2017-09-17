@@ -155,6 +155,10 @@ body {
           .dropdown-menu {
             a {
               color: #666;
+              &:hover {
+                background-color: #209e85;
+                color: #fff;
+              }
             }
             hr {
               margin-top: 5px;
