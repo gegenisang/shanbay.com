@@ -15,6 +15,10 @@ body {
     }
     .nav {
       li {
+        &:hover {
+          background-color: transparent;
+          color: #fff;
+        }
         &.active:after {
           content: "";
           width: 0;
@@ -31,19 +35,93 @@ body {
       a {
         color: #f5f5f5;
         font-size: 16px;
+        &:focus,
         &:hover {
           background-color: transparent;
-          color: #fff;
         }
       }
     }
     .navbar-right {
-      form {
-        float: left;
-        height: 20px;
-        line-height: 20px;
+      .search-form {
+        float: left; // display: inline-block;
+        margin-top: 12px 0 0;
+        color: #666;
+        position: relative;
+        background-color: transparent;
+        &.focus input,
+        &.focus input+.add-on {
+          color: #999;
+          border-color: #ccc;
+          background-color: #f5f5f5;
+        }
+        &.focus input {
+          width: 150px;
+        }
+        &.focus input::placeholder {
+          color: #999;
+        }
+        &.focus input+.add-on {
+          color: #999;
+          background-color: #f5f5f5;
+        }
+        .search-form .clear-btn.focus {
+          display: block;
+        }
+        input {
+          width: 90px;
+          line-height: 20px;
+          padding: 4px 20px 4px 15px;
+          position: relative;
+          border-radius: 20px 0px 0px 20px;
+          border: 1px solid #5bc5b0;
+          border-right: 0;
+          box-shadow: none;
+          transition: width .5s;
+          background-color: transparent;
+          color: #fff;
+          outline: none;
+          &::placeholder {
+            color: #f5f5f5;
+          }
+          &:foucs {
+            outline: none;
+            border-color: #f5f5f5;
+            box-shadow: none;
+          }
+        }
+        .add-on {
+          margin-left: -5px;
+          padding: 7px 7px;
+          display: inline-block;
+          line-height: 20px;
+          font-size: 14px;
+          min-width: 16px;
+          border-radius: 0px 20px 20px 0px;
+          border: 1px solid #5bc5b0;
+          border-left: none;
+          text-shadow: none;
+          background-color: transparent;
+          color: #fff;
+        }
+        .clear-btn {
+          position: absolute;
+          top: 18px;
+          right: 25px;
+          width: 20px;
+          height: 16px;
+          text-align: center;
+          border-radius: 0;
+          cursor: pointer;
+          z-index: 2px;
+          line-height: 16px;
+          border-right: 1px solid #bbb;
+          color: #bbb;
+        }
       }
     }
+  }
+  .nav {
+    margin-left: 20px;
   }
 }
 
