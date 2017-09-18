@@ -98,7 +98,7 @@
     <div class="row card-wrap">
       <div class="col-sm-5 col-sm-offset-1 card">
 
-        <div class="card-box" data-toggle="modal" data-target="#myModal">
+        <div class="card-box" data-toggle="modal" data-target="#week_modal">
           <div class="circle week">
             <p class="title">连续打卡</p>
             <p class="day">7
@@ -126,9 +126,32 @@
             </div>
           </div>
         </div>
+        <div class="modal fade" id="week_modal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">加入计划 7天阅读计划</h3>
+              </div>
+              <div class="modal-body text-center">
+                <p>账户余额
+                  <span>0</span> 贝壳</p>
+                <p>你要支付
+                  <span>500</span> 贝壳</p>
+                <p>抱歉，你的贝壳不够哦~</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default">去充值</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
       <div class="col-sm-5 col-sm-offset-1 card">
-        <div class="card-box">
+        <div class="card-box" data-toggle="modal" data-target="#month_modal">
           <div class="circle month">
             <p class="title">连续打卡</p>
             <p class="day">30
@@ -153,6 +176,23 @@
               <p class="text">300
                 <span>积分</span>
               </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="month_modal" role="dialog">
+          <div class="modal-dialog">
+            <!-- modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss='modal'>&times;</button>
+                <h4 class="modal-title"></h4>
+              </div>
+              <div class="modal-body">
+                <p></p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn"></button>
+              </div>
             </div>
           </div>
         </div>
