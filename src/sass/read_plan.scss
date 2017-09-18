@@ -7,6 +7,25 @@ body {
   background-color: #209e85;
   line-height: 50px;
   margin-bottom: 0px;
+  border-radius: 0px;
+  width: 100%;
+  .container {
+    position: relative;
+  } // li {
+  //   position: relative;
+  // }
+  // li.active:after {
+  //   display: block;
+  //   position: absolute;
+  //   content: "";
+  //   width: 0;
+  //   height: 0;
+  //   border: 6px solid transparent;
+  //   border-bottom: 6px solid #f5f5f5;
+  //   bottom: 0px;
+  //   left: 50%;
+  //   margin-left: -6px;
+  // }
   a {
     color: #f5f5f5;
     font-size: 16px;
@@ -22,10 +41,116 @@ body {
       margin-top: -10px;
     }
   }
+  .navbar-right {
+    .search-form {
+      position: relative;
+      float: left; // margin: 12px 0 0;
+      background-color: transparent;
+      &.focus input {
+        width: 150px;
+      }
+      &.focus input,
+      &.focus .add-on {
+        background-color: #fff;
+        border: 1px solid #d5d5d5;
+        color: #bbb;
+        &::placeholder {
+          color: #bbb;
+        }
+      }
+      input {
+        line-height: 20px;
+        width: 90px;
+        padding: 4px 4px 4px 15px;
+        background-color: transparent;
+        border-radius: 20px 0 0 20px;
+        border: 1px solid #5bc5b0;
+        color: #fff;
+        border-right: 0;
+        box-shadow: none;
+        outline: none;
+        transition: width .5s;
+        &::placeholder {
+          color: #f5f5f5;
+        }
+      }
+      .add-on {
+        display: inline-block;
+        line-height: 20px;
+        padding: 4px 5px;
+        margin-left: -5px;
+        min-width: 16px;
+        border: 1px solid #5bc5b0;
+        border-radius: 0 20px 20px 0;
+        border-left: 0;
+        box-shadow: none;
+        text-align: center;
+        font-size: 14px;
+        color: #f5f5f5;
+      }
+      .clear-btn {
+        display: inline-block;
+        position: absolute;
+        top: 17px;
+        right: 25px;
+        cursor: pointer;
+        z-index: 2;
+        height: 16px;
+        line-height: 16px;
+        width: 20px;
+        border-right: 1px solid #bbb;
+        color: bbb;
+        i {
+          color: #bbb;
+        }
+      }
+    }
+    .nav {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    .user-intro {
+      display: inline-block;
+    }
+    .intro-user {
+      display: inline-block;
+      color: #f5f5f5;
+      .fa-user-o {
+        font-size: 16px;
+      }
+      .username {
+        display: inline-block;
+        .btn-default {
+          background-color: transparent;
+          border: 1px solid transparent;
+          color: #f5f5f5;
+          padding-left: 2px;
+        }
+        .dropdown-menu {
+          position: absolute;
+          a {
+            color: #666;
+            &:hover {
+              background-color: #209e85;
+              color: #fff;
+            }
+          }
+          hr {
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
 }
 
 #header {
-  .nav {
+  .nav,
+  .news-lists {
     li {
       border-bottom: 2px solid transparent;
       &.active,
@@ -45,7 +170,7 @@ body {
 }
 
 .main {
-  background: #FFF;
+  background: #fdfdfd;
   padding: 40px;
   .main-title {
     color: gray;
@@ -64,10 +189,16 @@ body {
   .card-wrap {
     .card {
       .card-box {
-        border: 1px solid #ddd;
-        width: 80%;
+        border: 1px solid #e4e4e4;
+        width: 75%;
         margin: 0 auto;
         padding: 40px 20px 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        &:hover {
+          box-shadow: 0px 2px 2px 1px #e4e4e4;
+          cursor: pointer;
+        }
         .circle {
           height: 180px;
           width: 180px;
@@ -104,7 +235,7 @@ body {
         }
         .card-bottom {
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
           .card-one {
             .title {
               font-size: 1.2em;
@@ -153,5 +284,25 @@ body {
       }
     }
   }
-  .plan-list {}
+  .plan-list {
+    margin-top: 50px;
+    padding-left: 15%;
+    margin-bottom: 200px;
+    li {
+      margin-bottom: 10px;
+      font-size: 16px;
+      line-height: 30px;
+      span {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        color: #fff;
+        background-color: #21c4b2;
+        text-align: center;
+        line-height: 30px;
+        margin-right: 10px;
+        border-radius: 100%;
+      }
+    }
+  }
 }

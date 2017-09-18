@@ -32,7 +32,7 @@
           <li><a href="#">单词</a></li>
           <li><a href="#">听力</a></li>
           <li><a href="#">口语</a></li>
-          <li><a href="#">新闻</a></li>
+          <li class="active"><a href="#">新闻</a></li>
           <li><a href="#">读书</a></li>
           <li><a href="#">炼句</a></li>
           <li><a href="#">课程</a></li>
@@ -44,13 +44,20 @@
             <span class="add-on">
               <i class="fa fa-search" aria-hidden="true"></i>
             </span>
+            <span class="clear-btn hide">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
           </form>
           <ul class="nav navbar-nav">
             <li><a href="#">帮助</a></li>
           </ul>
-          <div class="intro-uesr">
+          <div class="user-intro hide">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+          </div>
+          <div class="intro-user">
             <i class="fa fa-user-o" aria-hidden="true"></i>
-            <span>
+            <span class="username">
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Username
                 <span class="caret"></span>
@@ -76,7 +83,7 @@
 
 
   <div id="header" class="container">
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav news-lists">
       <li><a href="#">新闻首页</a></li>
       <li><a href="#">收藏的文章</a></li>
       <li class="active"><a href="#">阅读计划</a></li>
@@ -89,7 +96,7 @@
       <p>加入阅读计划，让扇贝监督你每天阅读</p>
     </div>
     <div class="row card-wrap">
-      <div class="col-sm-6 card">
+      <div class="col-sm-5 col-sm-offset-1 card">
         <div class="card-box">
           <div class="circle week">
             <p class="title">连续打卡</p>
@@ -119,7 +126,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6 card">
+      <div class="col-sm-5 col-sm-offset-1 card">
         <div class="card-box">
           <div class="circle month">
             <p class="title">连续打卡</p>
@@ -148,12 +155,30 @@
             </div>
           </div>
         </div>
-
       </div>
+    </div>
+    <div class="plan-list">
+      <ul>
+        <li>
+          <span>1</span>
+          和扇贝打卡绑定，帮你养成每天阅读的好习惯
+        </li>
+        <li>
+          <span>2</span>
+          通过7天体验每天打卡的惊喜，通过30天读完一整本原版书
+        </li>
+        <li>
+          <span>3</span>
+          计划完成后，收获贝壳和积分奖励
+        </li>
+      </ul>
     </div>
   </div>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/header_form.js"></script>
+  <script src="js/news_nav.js"></script>
+  <script src="js/header_navbar.js"></script>
 </body>
 
 </html>
