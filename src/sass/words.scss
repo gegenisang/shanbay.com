@@ -1,0 +1,100 @@
+@import 'base';
+body {
+  background-color: #eee;
+}
+
+.navbar {
+  line-height: 50px;
+  background-color: #209e85;
+  margin-bottom: 0px;
+  li {
+    a {
+      color: #f5f5f5;
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        color: #fff;
+      }
+    }
+  }
+  .navbar-brand img {
+    width: 100px;
+    margin-top: -10px;
+  }
+  .navbar-right {
+    .search-form {
+      // display: inline-block;
+      float: left;
+      position: relative;
+      background: transparent;
+      margin-right: 30px;
+      input {
+        width: 90px;
+        line-height: 20px;
+        padding: 4px 4px 4px 15px; // border: 1px solid #5
+      }
+      add-on {
+        line-height: 16px;
+      }
+    }
+    .nav {
+      margin-right: 30px;
+    }
+    .intro-user {
+      display: inline-block;
+      color: #f5f5f5;
+      i {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.page-list {
+  .nav {
+    li {
+      a {
+        color: #666;
+        font-size: 14px;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 10px;
+        &:hover {
+          border-bottom: 2px solid #209e85;
+          transition: all 1s;
+        }
+      }
+      &.active a,
+      &.active:hover a {
+        color: #209e85;
+        border-bottom: 2px solid #209e85;
+      }
+    }
+  }
+}
+
+.page-content {
+  min-height: 781px;
+  background-color: #fdfdfd;
+  .content-title {
+    padding-top: 60px;
+    font-size: 30px;
+    text-align: center;
+    color: #209e85;
+    .title-left,
+    .title-right {
+      color: #999;
+      font-size: 20px;
+    }
+    .title-left {
+      margin-right: 10px;
+    }
+    .title-right {
+      margin-left: 10px;
+    }
+  }
+  .start {
+    padding: 40px 60px;
+    background-color: #eee;
+  }
+}
