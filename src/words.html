@@ -41,14 +41,104 @@
         <div class="navbar-right">
           <form class="search-form">
             <input type="text" placeholder="查词">
+            <span class="add-on">
+              <i class="fa fa-search"></i>
+            </span>
+            <span class="clear-btn">
+              <i class="fa fa-times"></i>
+            </span>
           </form>
           <ul class="nav navbar-nav">
-            <li><a href="#">帮助</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal">快捷键</a></li>
           </ul>
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">快捷键</h4>
+                </div>
+                <div class="modal-body">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>下个单词</th>
+                        <td>大于号>或右方向键或D键</td>
+                      </tr>
+                      <tr>
+                        <th>提交答案</th>
+                        <td>回车键</td>
+                      </tr>
+                      <tr>
+                        <th>选择相应选项</th>
+                        <td>数字键0到4，0为忘记</td>
+                      </tr>
+                      <tr>
+                        <th>拼写单词</th>
+                        <td>S 键</td>
+                      </tr>
+                      <tr>
+                        <th>单词发音</th>
+                        <td>P 键</td>
+                      </tr>
+                      <tr>
+                        <th>显示词根详情（需购买智慧词根应用） </th>
+                        <td>R 键</td>
+                      </tr>
+                      <tr>
+                        <th>显示派生词信息（需购买派生词应用）</th>
+                        <td> F 键</td>
+                      </tr>
+                      <tr>
+                        <th>认识</th>
+                        <td>数字键1</td>
+                      </tr>
+                      <tr>
+                        <th>不认识</th>
+                        <td>数字键2/td>
+                      </tr>
+                      <tr>
+                        <th>忘记</th>
+                        <td>数字键 0</td>
+                      </tr>
+                      <tr>
+                        <th>太简单/th>
+                          <td>数字键 0</td>
+                      </tr>
+                      <tr>
+                        <th>关闭对话框</th>
+                        <td>Esc 键</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-default" type="button" data-dismiss="modal">关闭</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="intro-user">
             <i class="fa fa-user-o">
             </i>
-            <span class="username">Username</span>
+            <span class="username">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Username
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">我的空间</a></li>
+                <li><a href="#">我的打卡</a></li>
+                <li><a href="#">我的班级</a></li>
+                <li><a href="#">我的保险</a></li>
+                <hr>
+                <li><a href="#">短信</a></li>
+                <li><a href="#">贝壳</a></li>
+                <hr>
+                <li><a href="#">设置</a></li>
+                <li><a href="#">退出</a></li>
+              </ul>
+            </span>
           </div>
           <div class="user-intro hide">
             <a href="#">登录</a>
@@ -79,36 +169,39 @@
         <span class="title-right">⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅</span>
       </div>
       <div class="start">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="today">
-              <p>100</p>
-              <p>今日单词</p>
-            </div>
-            <div class="new_words">
-              <p>0</p>
-              <p>新词</p>
-            </div>
-            <div class="start_learn">
-              <button class="btn btn-success">开始学习</button>
+        <div class="start-box">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="today">
+                <h2>100</h2>
+                <p>今日单词</p>
+              </div>
+              <div class="new_words">
+                <h2>0</h2>
+                <p>新词</p>
+              </div>
+              <div class="start_learn">
+                <button class="btn btn-success btn-lg">开始学习</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="quote">
-        <blockquote>
-          <p>We have too many high-sounding words, and too few actions that correspond with them.
-            <br> 我们有太多豪言壮语，却鲜有行动将其付诸实践。
-          </p>
-          <small>
-            Abigail Adams
-          </small>
-        </blockquote>
+        <div class="quote">
+          <blockquote>
+            <p>We have too many high-sounding words, and too few actions that correspond with them.
+              <br> 我们有太多豪言壮语，却鲜有行动将其付诸实践。
+            </p>
+            <small>
+              Abigail Adams
+            </small>
+          </blockquote>
+        </div>
       </div>
     </div>
   </div>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/course.js"></script>
 </body>
 
 </html>
