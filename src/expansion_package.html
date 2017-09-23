@@ -40,59 +40,38 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="">登录</a></li>
-          <li><a href="">注册</a></li>
+          <li><a href="">帮助</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user-o"></i> Username
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">我的空间</a></li>
+              <li><a href="#">我的打卡</a></li>
+              <li><a href="#">我的班级</a></li>
+              <li><a href="#">我的保险</a></li>
+              <hr>
+              <li><a href="#">短信</a></li>
+              <li><a href="#">贝壳</a></li>
+              <hr>
+              <li><a href="#">设置</a></li>
+              <li><a href="#">退出</a></li>
+            </ul>
+          </li>
         </ul>
 
-        <form class="navbar-form navbar-right">
-          <div class="input-group">
-            <input type="text" class="form-control">
-            <div class="input-group-addon">
+        <form action="" class="navbar-form navbar-right">
+          <div id="input-group" class="input-group">
+            <input type="text" class="form-control" id="search-input" placeholder="查词">
+            <span class="input-group-addon" id="clear-btn">
               <i class="fa fa-close"></i>
-            </div>
-            <div class="input-group-addon">
+            </span>
+            <span class="input-group-addon" id="search-btn">
               <i class="fa fa-search"></i>
-            </div>
+            </span>
           </div>
         </form>
-
-        <!-- <div class="navbar-right">
-          <form class="search-form">
-            <input type="text" placeholder="查词">
-            <span class="add-on">
-              <i class="fa fa-search"></i>
-            </span>
-            <span class="clear-btn">
-              <i class="fa fa-times"></i>
-            </span>
-          </form>
-          <ul class="nav navbar-nav">
-            <li><a href="#">帮助</a></li>
-          </ul>
-          <div class="intro-user">
-            <i class="fa fa-user-o"></i>
-            <span class="username">
-              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Username
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a href="#">我的空间</a></li>
-                <li><a href="#">我的打卡</a></li>
-                <li><a href="#">我的班级</a></li>
-                <li><a href="#">我的保险</a></li>
-                <hr>
-                <li><a href="#">短信</a></li>
-                <li><a href="#">贝壳</a></li>
-                <hr>
-                <li><a href="#">设置</a></li>
-                <li><a href="#">退出</a></li>
-              </ul>
-            </span>
-          </div>
-        </div> -->
-
-
-
       </div>
     </div>
   </nav>
@@ -114,7 +93,7 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="row">
-            <div class="col-sm-3 list-img">
+            <div class="col-sm-3 list-img text-center">
               <img src="img/market/1.png" alt="one">
             </div>
             <div class="col-sm-8 col-sm-offset-1">
@@ -122,14 +101,14 @@
               <p class="des">牛津英汉词典是最畅销的英语词典之一，英文释义都使用英语中最常见的单词编写，对于高中及以上水平的学习者都不会造成理解上的困难。 本词典的释义特色是会把词语的每一种释义都不厌其烦地单独列出来，并尽量用简...
                 <p>
                   <a href="#">
-                    <span></span>查看更多</a>
+                   >>查看更多</a>
                 </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
           <div class="row">
-            <div class="col-sm-3 list-img">
+            <div class="col-sm-3 list-img text-center">
               <img src="img/market/6.png" alt="two">
             </div>
             <div class="col-sm-8 col-sm-offset-1">
@@ -139,7 +118,7 @@
               </p>
               <p>
                 <a href="#">
-                  <span></span>查看更多</a>
+                 >>查看更多</a>
               </p>
             </div>
           </div>
@@ -148,7 +127,7 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="row">
-            <div class="col-sm-3 list-img">
+            <div class="col-sm-3 list-img text-center">
               <img src="img/market/3.png" alt="one">
             </div>
             <div class="col-sm-8 col-sm-offset-1">
@@ -158,14 +137,14 @@
               </p>
               <p>
                 <a href="#">
-                  <span></span>查看更多</a>
+                  >>查看更多</a>
               </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
           <div class="row">
-            <div class="col-sm-3 list-img">
+            <div class="col-sm-3 list-img text-center">
               <img src="img/market/4.png" alt="two">
             </div>
             <div class="col-sm-8 col-sm-offset-1">
@@ -175,7 +154,7 @@
               </p>
               <p>
                 <a href="#">
-                  <span></span>查看更多</a>
+                 >>查看更多</a>
               </p>
             </div>
           </div>
@@ -184,7 +163,7 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="row">
-            <div class="col-sm-3 list-img">
+            <div class="col-sm-3 list-img text-center">
               <img src="img/market/5.png" alt="one">
             </div>
             <div class="col-sm-8 col-sm-offset-1">
@@ -194,24 +173,24 @@
               </p>
               <p>
                 <a href="#">
-                  <span></span>查看详情</a>
+                  >>查看详情</a>
               </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
           <div class="row">
-            <div class="col-sm-3 list-img">
+            <div class="col-sm-3 list-img text-center">
               <img src="img/market/2.png" alt="two">
             </div>
             <div class="col-sm-8 col-sm-offset-1">
-              <h3>音节划分</h3>
+              <h3>单词配图</h3>
               <p class="des">
-                在复习单词时，将单词按照音节划分来展示，帮助发音和记忆。
+                单词配图，包含针对7万多词条近50万张图片。注意，根据您所学单词的不同，并非每个单词都有配图，同时也未必每张配图都会让你满意，但我们会持续改善图片质量。
               </p>
               <p>
                 <a href="#">
-                  <span></span>查看详情</a>
+                 >>查看详情</a>
               </p>
             </div>
           </div>
