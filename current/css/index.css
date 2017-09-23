@@ -1,0 +1,298 @@
+div,
+p,
+a,
+h3,
+h4,
+h5,
+img,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+* {
+    /* outline: 1px solid #ddd; */
+}
+
+.navbar {
+    background: #fff;
+    border-bottom: none;
+    margin-bottom: 0;
+    min-height: 3rem;
+    word-spacing: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar span {
+    font-size: 1rem;
+}
+
+.navbar-right a {
+    line-height: 3rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.navbar-right {
+    margin-right: 1.5rem;
+}
+
+.navbar-right a:hover {
+    text-decoration: none;
+}
+
+#logo {
+    width: 11rem;
+    height: auto;
+    margin: 2rem 0rem;
+}
+
+.first {
+    background-image: url(../img/index/danciliang.png);
+    background-repeat: no-repeat;
+}
+
+.home-link a {
+    color: #666;
+    width: 5rem;
+    line-height: 3rem;
+    display: inline-block;
+    transition: font-size 0.2s;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.home-link a:hover,
+.home-link a.active {
+    font-size: 2rem;
+}
+
+.carousel-control.right {
+    background-image: url(../img/index/right.png);
+    background-repeat: no-repeat;
+    right: -1rem;
+}
+
+.carousel-control.left {
+    background-image: url(../img/index/left.png);
+    background-repeat: no-repeat;
+    left: -1rem;
+}
+
+.carousel-control {
+    background: none;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100% 100%;
+    border: none;
+    width: 1.5rem;
+    height: 4.125rem;
+    opacity: 1;
+    top: 50%;
+    margin-top: -2.0625rem;
+}
+
+.carousel-inner {
+    width: 96%;
+    margin-left: 2%;
+}
+
+.glyphicon-chevron-left:before {
+    content: "";
+}
+
+.glyphicon-chevron-right:before {
+    content: none;
+}
+
+.carousel-caption {
+    position: absolute;
+    margin: auto auto auto 10rem;
+    top: 0;
+    bottom: 0;
+    height: 20rem;
+    left: 6.25rem;
+    text-align: left;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.carousel-caption p {
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+.carousel-caption a {
+    padding: 0.6rem 2.5rem;
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: -4.5rem;
+}
+
+.word-bdc,
+.word-bdc a {
+    color: #145f57;
+}
+
+.word-bdc a {
+    border: 1px solid #145f57;
+    border-radius: 0.2rem;
+}
+
+.listen,
+.listen a {
+    color: #804500;
+}
+
+.listen a {
+    border: 1px solid #804500;
+    border-radius: 0.2rem;
+}
+
+.speak,
+.speak a {
+    color: #fff;
+}
+
+.speak a {
+    border: 1px solid #fff;
+    border-radius: 0.2rem;
+}
+
+.news,
+.news a {
+    color: #0078a5;
+}
+
+.news a {
+    border: 1px solid #0078a5;
+    border-radius: 0.2rem;
+}
+
+.sentence,
+.sentence a {
+    color: #165c5f;
+}
+
+.sentence a {
+    border: 1px solid #165c5f;
+    border-radius: 0.2rem;
+}
+
+.carousel-caption h4 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 1.56rem;
+}
+
+.second {
+    background-image: url(../img/index/baoxian.png);
+    background-repeat: no-repeat;
+}
+
+.third {
+    background-image: url(../img/index/shequ.png);
+    background-repeat: no-repeat;
+}
+
+.first,
+.second,
+.third {
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+    margin: 0 auto;
+    background-size: contain;
+}
+
+.first img {
+    width: 5.8rem;
+    height: auto;
+    left: 1.5rem;
+    top: 0;
+    position: absolute;
+    transition: top 0.2s;
+}
+
+.first:hover img {
+    top: -0.17rem;
+}
+
+.text h4 {
+    margin: 2rem 0;
+}
+
+.text p {
+    color: #666;
+    margin: 0 0 0.3rem;
+}
+
+.second img {
+    position: absolute;
+    width: 7.6rem;
+    top: -0.7rem;
+    left: -0.4rem;
+    transition: top 0.2s;
+}
+
+.second:hover img {
+    top: -0.9rem;
+}
+
+.third img {
+    width: 4.3rem;
+    position: absolute;
+    top: 0rem;
+    left: 1.1rem;
+    transition: top 0.2s;
+}
+
+.third:hover img {
+    top: -0.3rem;
+}
+
+.section2 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.footer-bg {
+    padding-top: 3rem;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-bottom: 3rem;
+}
+
+.footer-bg h4 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-bg li {
+    line-height: 2.5rem;
+    color: #333;
+}
+
+.footer-bg .collins {
+    width: 8rem;
+    height: auto;
+}
+
+.footer-bottom {
+    margin-top: 6rem;
+}
+
+.footer-bottom p {
+    line-height: 2rem;
+}

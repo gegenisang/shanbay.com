@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box; }
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+i,
+ul,
+i,
+li,
+input,
+form,
+img,
+nav,
+header,
+footer {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+a:focus,
+a:hover {
+  text-decoration: none; }
+
+i {
+  font-style: normal; }
+
+body {
+  background-color: #eee; }
+
+.navbar {
+  line-height: 50px;
+  background-color: #209e85;
+  margin-bottom: 0px; }
+  .navbar li a {
+    color: #f5f5f5; }
+    .navbar li a:hover, .navbar li a:focus {
+      background-color: transparent;
+      color: #fff; }
+  .navbar .navbar-brand img {
+    width: 100px;
+    margin-top: -10px; }
+  .navbar .navbar-right #myModal {
+    margin-top: 100px; }
+    .navbar .navbar-right #myModal .modal-header h4 {
+      font-size: 24.5px;
+      font-weight: 900; }
+    .navbar .navbar-right #myModal .modal-header .close {
+      margin-top: 5px;
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      border: 1px solid #999;
+      border-radius: 100%;
+      opacity: 0.4; }
+      .navbar .navbar-right #myModal .modal-header .close:hover {
+        background: #eee;
+        color: #333;
+        opacity: 1; }
+    .navbar .navbar-right #myModal .modal-body table tr {
+      line-height: 30px; }
+      .navbar .navbar-right #myModal .modal-body table tr th {
+        text-align: center; }
+    .navbar .navbar-right #myModal .modal-footer {
+      background-color: #f9f9f9;
+      border-radius: 0 0 6px 6px; }
+  .navbar .navbar-right .search-form {
+    float: left;
+    position: relative;
+    background: transparent;
+    margin-right: 30px; }
+    .navbar .navbar-right .search-form.focus input,
+    .navbar .navbar-right .search-form.focus .add-on {
+      color: #bbb;
+      background-color: #fff; }
+    .navbar .navbar-right .search-form.focus input {
+      width: 150px; }
+      .navbar .navbar-right .search-form.focus input::placeholder {
+        color: #bbb; }
+    .navbar .navbar-right .search-form.focus .clear-btn {
+      display: block; }
+    .navbar .navbar-right .search-form input {
+      width: 80px;
+      line-height: 20px;
+      padding: 4px 4px 4px 15px;
+      border: 1px solid #5bc5b0;
+      border-radius: 20px 0 0 20px;
+      background-color: transparent;
+      box-shadow: none;
+      border-right: none;
+      outline: none;
+      color: #fff;
+      transition: width .3s; }
+      .navbar .navbar-right .search-form input::placeholder {
+        color: #f5f5f5; }
+    .navbar .navbar-right .search-form .add-on {
+      display: inline-block;
+      text-align: center;
+      line-height: 16px;
+      margin-left: -5px;
+      font-size: 14px;
+      color: #f5f5f5;
+      padding: 6px 6px;
+      border: 1px solid #5bc5b0;
+      border-radius: 0 20px 20px 0;
+      border-left: none; }
+    .navbar .navbar-right .search-form .clear-btn {
+      position: absolute;
+      right: 25px;
+      top: 18px;
+      display: none;
+      line-height: 16px;
+      font-size: 14px;
+      padding-right: 6px;
+      border-right: 1px solid #bbb; }
+      .navbar .navbar-right .search-form .clear-btn i {
+        color: #bbb; }
+  .navbar .navbar-right .nav {
+    margin-right: 30px;
+    outline: none; }
+  .navbar .navbar-right .intro-user {
+    display: inline-block;
+    color: #f5f5f5; }
+    .navbar .navbar-right .intro-user i {
+      display: inline-block;
+      font-size: 18px;
+      margin-right: 10px; }
+    .navbar .navbar-right .intro-user .username {
+      position: relative; }
+      .navbar .navbar-right .intro-user .username .btn-default {
+        background-color: transparent;
+        border-color: transparent;
+        color: #f5f5f5;
+        outline: none;
+        box-shadow: none; }
+      .navbar .navbar-right .intro-user .username .dropdown-menu {
+        position: absolute;
+        right: 0;
+        margin-top: 20px; }
+        .navbar .navbar-right .intro-user .username .dropdown-menu li a {
+          color: #333; }
+        .navbar .navbar-right .intro-user .username .dropdown-menu li:hover {
+          background-color: #209e85; }
+          .navbar .navbar-right .intro-user .username .dropdown-menu li:hover a {
+            color: #fff; }
+        .navbar .navbar-right .intro-user .username .dropdown-menu hr {
+          margin: 5px 0; }
+
+.page-list .nav li a {
+  color: #666;
+  font-size: 14px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 10px; }
+  .page-list .nav li a:hover {
+    border-bottom: 2px solid #209e85;
+    transition: all 1s; }
+
+.page-list .nav li.active a,
+.page-list .nav li.active:hover a {
+  color: #209e85;
+  border-bottom: 2px solid #209e85; }
+
+.page-content {
+  min-height: 781px;
+  background-color: #fdfdfd; }
+  .page-content .content-title {
+    padding-top: 60px;
+    font-size: 30px;
+    text-align: center;
+    color: #209e85; }
+    .page-content .content-title .title-left,
+    .page-content .content-title .title-right {
+      color: #999;
+      font-size: 20px; }
+    .page-content .content-title .title-left {
+      margin-right: 10px; }
+    .page-content .content-title .title-right {
+      margin-left: 10px; }
+  .page-content .start {
+    padding: 40px 60px; }
+    .page-content .start .start-box {
+      background-color: #eee;
+      border-radius: 6px;
+      padding: 50px 100px;
+      position: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .page-content .start .start-box .today,
+      .page-content .start .start-box .new_words {
+        float: left;
+        text-align: center; }
+        .page-content .start .start-box .today h2,
+        .page-content .start .start-box .new_words h2 {
+          font-size: 64px;
+          color: #209e85;
+          margin-right: 30px; }
+        .page-content .start .start-box .today p,
+        .page-content .start .start-box .new_words p {
+          font-size: 20px;
+          color: #222;
+          line-height: 22px;
+          margin-right: 30px; }
+      .page-content .start .start-box .start_learn {
+        float: right;
+        margin-top: 20px; }
+        .page-content .start .start-box .start_learn .btn-success {
+          background-color: #38c2a8;
+          color: #fff;
+          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+          background-image: linear-gradient(to bottom, #38c2a8, #38c2a8);
+          background-repeat: repeat-x;
+          border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
+    .page-content .start .quote {
+      margin-top: 50px; }
+      .page-content .start .quote blockquote {
+        padding: 0 15px; }
+        .page-content .start .quote blockquote p {
+          color: #209e85;
+          font-size: 18px;
+          line-height: 18px;
+          line-height: 1.25; }
+        .page-content .start .quote blockquote small {
+          font-size: 85%;
+          line-height: 20px;
+          display: block;
+          color: #999; }
