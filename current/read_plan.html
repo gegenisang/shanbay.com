@@ -1,1 +1,213 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>阅读计划</title><link rel="shortcut icon" href="img/shanbay_favicon.png"><link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"><link rel="stylesheet" href="css/read_plan.css"></head><body><nav id="navbar" class="navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a href="#" class="navbar-brand"><img src="img/logo_v4.png" alt="logo"></a></div><div class="collapse navbar-collapse" id="myNavbar"><ul class="nav navbar-nav"><li><a href="#">首页</a></li><li><a href="words.html">单词</a></li><li><a href="#">听力</a></li><li><a href="#">口语</a></li><li class="active"><a href="#">新闻</a></li><li><a href="#">读书</a></li><li><a href="#">炼句</a></li><li><a href="#">课程</a></li><li><a href="#">社区</a></li></ul><div class="navbar-right"><form class="search-form"><input type="text" placeholder="查词"> <span class="add-on"><i class="fa fa-search" aria-hidden="true"></i> </span><span class="clear-btn hide"><i class="fa fa-times" aria-hidden="true"></i></span></form><ul class="nav navbar-nav"><li><a href="#">帮助</a></li></ul><div class="user-intro hide"><a href="#">登录</a> <a href="#">注册</a></div><div class="intro-user"><i class="fa fa-user-o" aria-hidden="true"></i> <span class="username"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username <span class="caret"></span></button><ul class="dropdown-menu"><li><a href="#">我的空间</a></li><li><a href="#">我的打卡</a></li><li><a href="#">我的班级</a></li><li><a href="#">我的保险</a></li><hr><li><a href="#">短信</a></li><li><a href="#">贝壳</a></li><hr><li><a href="#">设置</a></li><li><a href="#">退出</a></li></ul></span></div></div></div></div></nav><div id="header" class="container"><ul class="nav navbar-nav news-lists"><li><a href="#">新闻首页</a></li><li><a href="#">收藏的文章</a></li><li class="active"><a href="#">阅读计划</a></li><li><a href="#">阅读进度</a></li></ul></div><div class="container main"><div class="main-title"><h1>阅读计划</h1><p>加入阅读计划，让扇贝监督你每天阅读</p></div><div class="row card-wrap"><div class="col-sm-5 col-sm-offset-1 card"><div class="card-box" data-toggle="modal" data-target="#week_modal"><div class="circle week"><p class="title">连续打卡</p><p class="day">7 <span>天</span></p></div><div class="card-bottom"><div class="card-one"><p class="title">保证金(贝壳)</p><p class="text">500</p></div><div class="card-two"><p class="title">完成返回</p><p class="text"><i class="fa fa-long-arrow-right fa-3x" aria-hidden="true"></i></p></div><div class="card-three"><p class="title">600 <span>贝壳</span></p><p class="text">10 <span>积分</span></p></div></div></div><div class="modal fade" id="week_modal" role="dialog"><div class="modal-dialog"><!-- Modal content--><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h3 class="modal-title">加入计划 7天阅读计划</h3></div><div class="modal-body text-center"><p>账户余额 <span class="last">0</span> 贝壳</p><p>你要支付 <span>500</span> 贝壳</p><p class="tips">抱歉，你的贝壳不够哦~</p></div><div class="modal-footer"><button type="button" class="btn btn-default">去充值</button></div></div></div></div></div><div class="col-sm-5 col-sm-offset-1 card"><div class="card-box" data-toggle="modal" data-target="#month_modal"><div class="circle month"><p class="title">连续打卡</p><p class="day">30 <span>天</span></p></div><div class="card-bottom"><div class="card-one"><p class="title">保证金(贝壳)</p><p class="text">2000</p></div><div class="card-two"><p class="title">完成返回</p><p class="text"><i class="fa fa-long-arrow-right fa-3x" aria-hidden="true"></i></p></div><div class="card-three"><p class="title">2500 <span>贝壳</span></p><p class="text">300 <span>积分</span></p></div></div></div><div class="modal fade" id="month_modal" role="dialog"><div class="modal-dialog"><!-- modal content --><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h3 class="modal-title">加入计划 30天阅读计划</h3></div><div class="modal-body text-center"><p>账户余额 <span class="last">0</span>贝壳</p><p>你要支付 <span>2000</span>贝壳</p><p class="tips">抱歉，你的贝壳不够哦~</p></div><div class="modal-footer"><button class="btn btn-default">去充值</button></div></div></div></div></div></div><div class="plan-list"><ul><li><span>1</span> 和扇贝打卡绑定，帮你养成每天阅读的好习惯</li><li><span>2</span> 通过7天体验每天打卡的惊喜，通过30天读完一整本原版书</li><li><span>3</span> 计划完成后，收获贝壳和积分奖励</li></ul></div></div><script src="bower_components/jquery/dist/jquery.min.js"></script><script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="js/header_form.js"></script><script src="js/news_nav.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>阅读计划</title>
+  <link rel="shortcut icon" href="img/shanbay_favicon.png">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/read_plan.css">
+</head>
+
+<body>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">
+          <img src="img/logo_v4.png" alt="logo">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="words.html">单词</a></li>
+          <li><a href="#">听力</a></li>
+          <li><a href="speak.html">口语</a></li>
+          <li class="active"><a href="news.html">新闻</a></li>
+          <li><a href="#">读书</a></li>
+          <li><a href="#">炼句</a></li>
+          <li><a href="course.html">课程</a></li>
+          <li><a href="#">社区</a></li>
+        </ul>
+        <div class="navbar-right">
+          <form class="search-form">
+            <input type="text" placeholder="查词">
+            <span class="add-on">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+            <span class="clear-btn hide">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+          </form>
+          <ul class="nav navbar-nav">
+            <li><a href="help.html">帮助</a></li>
+          </ul>
+          <div class="user-intro hide"><a href="login.html">登录</a> <a href="register.html">注册</a></div>
+          <div class="intro-user">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+            <span class="username">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">我的空间</a></li>
+                <li><a href="#">我的打卡</a></li>
+                <li><a href="#">我的班级</a></li>
+                <li><a href="#">我的保险</a></li>
+                <hr>
+                <li><a href="#">短信</a></li>
+                <li><a href="#">贝壳</a></li>
+                <hr>
+                <li><a href="#">设置</a></li>
+                <li><a href="#">退出</a></li>
+              </ul>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="header" class="container">
+    <ul class="nav navbar-nav news-lists">
+      <li><a href="#">新闻首页</a></li>
+      <li><a href="#">收藏的文章</a></li>
+      <li class="active"><a href="#">阅读计划</a></li>
+      <li><a href="#">阅读进度</a></li>
+    </ul>
+  </div>
+  <div class="container main">
+    <div class="main-title">
+      <h1>阅读计划</h1>
+      <p>加入阅读计划，让扇贝监督你每天阅读</p>
+    </div>
+    <div class="row card-wrap">
+      <div class="col-sm-5 col-sm-offset-1 card">
+        <div class="card-box" data-toggle="modal" data-target="#week_modal">
+          <div class="circle week">
+            <p class="title">连续打卡</p>
+            <p class="day">7
+              <span>天</span>
+            </p>
+          </div>
+          <div class="card-bottom">
+            <div class="card-one">
+              <p class="title">保证金(贝壳)</p>
+              <p class="text">500</p>
+            </div>
+            <div class="card-two">
+              <p class="title">完成返回</p>
+              <p class="text">
+                <i class="fa fa-long-arrow-right fa-3x" aria-hidden="true"></i>
+              </p>
+            </div>
+            <div class="card-three">
+              <p class="title">600
+                <span>贝壳</span>
+              </p>
+              <p class="text">10
+                <span>积分</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="week_modal" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">加入计划 7天阅读计划</h3>
+              </div>
+              <div class="modal-body text-center">
+                <p>账户余额
+                  <span class="last">0</span> 贝壳</p>
+                <p>你要支付
+                  <span>500</span> 贝壳</p>
+                <p class="tips">抱歉，你的贝壳不够哦~</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default">去充值</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5 col-sm-offset-1 card">
+        <div class="card-box" data-toggle="modal" data-target="#month_modal">
+          <div class="circle month">
+            <p class="title">连续打卡</p>
+            <p class="day">30
+              <span>天</span>
+            </p>
+          </div>
+          <div class="card-bottom">
+            <div class="card-one">
+              <p class="title">保证金(贝壳)</p>
+              <p class="text">2000</p>
+            </div>
+            <div class="card-two">
+              <p class="title">完成返回</p>
+              <p class="text">
+                <i class="fa fa-long-arrow-right fa-3x" aria-hidden="true"></i>
+              </p>
+            </div>
+            <div class="card-three">
+              <p class="title">2500
+                <span>贝壳</span>
+              </p>
+              <p class="text">300
+                <span>积分</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="month_modal" role="dialog">
+          <div class="modal-dialog">
+            <!-- modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">加入计划 30天阅读计划</h3>
+              </div>
+              <div class="modal-body text-center">
+                <p>账户余额
+                  <span class="last">0</span>贝壳</p>
+                <p>你要支付
+                  <span>2000</span>贝壳</p>
+                <p class="tips">抱歉，你的贝壳不够哦~</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-default">去充值</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="plan-list">
+      <ul>
+        <li>
+          <span>1</span> 和扇贝打卡绑定，帮你养成每天阅读的好习惯</li>
+        <li>
+          <span>2</span> 通过7天体验每天打卡的惊喜，通过30天读完一整本原版书</li>
+        <li>
+          <span>3</span> 计划完成后，收获贝壳和积分奖励</li>
+      </ul>
+    </div>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/header_form.js"></script>
+  <script src="js/news_nav.js"></script>
+</body>
+
+</html>

@@ -1,1 +1,199 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>扇贝，知道你在改变</title><link rel="shortcut icon" href="img/shanbay_favicon.png"><link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"><link rel="stylesheet" href="css/words.css"></head><body><nav class="navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggel="collapse" data-target="#myNavbar"><span class="sr-only">Toggle navigator</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a href="#" class="navbar-brand"><img src="img/logo_v4.png" alt="logo"></a></div><div class="navbar-collapse collapse" id="myNavbar"><ul class="nav navbar-nav"><li><a href="#">首页</a></li><li><a href="#">单词</a></li><li><a href="#">听力</a></li><li><a href="#">口语</a></li><li><a href="#">新闻</a></li><li><a href="#">读书</a></li><li><a href="#">炼句</a></li><li><a href="#">课程</a></li><li><a href="#">社区</a></li></ul><div class="navbar-right"><form class="search-form"><input type="text" placeholder="查词"> <span class="add-on"><i class="fa fa-search"></i> </span><span class="clear-btn"><i class="fa fa-times"></i></span></form><ul class="nav navbar-nav"><li><a href="#" data-toggle="modal" data-target="#myModal">快捷键</a></li></ul><div class="modal fade" id="myModal"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">快捷键</h4></div><div class="modal-body"><table><tbody><tr><th>下个单词</th><td>大于号>或右方向键或D键</td></tr><tr><th>提交答案</th><td>回车键</td></tr><tr><th>选择相应选项</th><td>数字键0到4，0为忘记</td></tr><tr><th>拼写单词</th><td>S 键</td></tr><tr><th>单词发音</th><td>P 键</td></tr><tr><th>显示词根详情（需购买智慧词根应用）</th><td>R 键</td></tr><tr><th>显示派生词信息（需购买派生词应用）</th><td>F 键</td></tr><tr><th>认识</th><td>数字键1</td></tr><tr><th>不认识</th><td>数字键2/td></td></tr><tr><th>忘记</th><td>数字键 0</td></tr><tr><th>太简单/th><td>数字键 0</td></th></tr><tr><th>关闭对话框</th><td>Esc 键</td></tr></tbody></table></div><div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">关闭</button></div></div></div></div><div class="intro-user"><i class="fa fa-user-o"></i> <span class="username"><button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Username <span class="caret"></span></button><ul class="dropdown-menu"><li><a href="#">我的空间</a></li><li><a href="#">我的打卡</a></li><li><a href="#">我的班级</a></li><li><a href="#">我的保险</a></li><hr><li><a href="#">短信</a></li><li><a href="#">贝壳</a></li><hr><li><a href="#">设置</a></li><li><a href="#">退出</a></li></ul></span></div><div class="user-intro hide"><a href="#">登录</a> <a href="#">注册</a></div></div></div></div></nav><div class="page-list"><div class="container"><ul class="nav navbar-nav"><li class="active"><a href="#">单词学习</a></li><li><a href="expansion_package.html">扩展包</a></li><li><a href="#">单词书</a></li><li><a href="#">我的词库</a></li><li><a href="#">单词量测试</a></li><li><a href="#">单词进度</a></li><li><a href="#">单词设置</a></li></ul></div></div><div class="container"><div class="page-content"><div class="content-title"><span class="title-left">⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅</span> 扇贝单词 <span class="title-right">⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅</span></div><div class="start"><div class="start-box"><div class="row"><div class="col-xs-12"><div class="today"><h2>100</h2><p>今日单词</p></div><div class="new_words"><h2>0</h2><p>新词</p></div><div class="start_learn"><button class="btn btn-success btn-lg">开始学习</button></div></div></div></div><div class="quote"><blockquote><p>We have too many high-sounding words, and too few actions that correspond with them.<br>我们有太多豪言壮语，却鲜有行动将其付诸实践。</p><small>Abigail Adams</small></blockquote></div></div></div></div><script src="bower_components/jquery/dist/jquery.min.js"></script><script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="js/course.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>扇贝，知道你在改变</title>
+  <link rel="shortcut icon" href="img/shanbay_favicon.png">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/words.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggel="collapse" data-target="#myNavbar">
+          <span class="sr-only">Toggle navigator</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">
+          <img src="img/logo_v4.png" alt="logo">
+        </a>
+      </div>
+      <div class="navbar-collapse collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="words.html">单词</a></li>
+          <li><a href="#">听力</a></li>
+          <li><a href="speak.html">口语</a></li>
+          <li><a href="news.html">新闻</a></li>
+          <li><a href="#">读书</a></li>
+          <li><a href="#">炼句</a></li>
+          <li><a href="course.html">课程</a></li>
+          <li><a href="#">社区</a></li>
+        </ul>
+        <div class="navbar-right">
+          <form class="search-form">
+            <input type="text" placeholder="查词">
+            <span class="add-on">
+              <i class="fa fa-search"></i>
+            </span>
+            <span class="clear-btn">
+              <i class="fa fa-times"></i>
+            </span>
+          </form>
+          <ul class="nav navbar-nav">
+            <li><a href="#" data-toggle="modal" data-target="#myModal">快捷键</a></li>
+          </ul>
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">快捷键</h4>
+                </div>
+                <div class="modal-body">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>下个单词</th>
+                        <td>大于号>或右方向键或D键</td>
+                      </tr>
+                      <tr>
+                        <th>提交答案</th>
+                        <td>回车键</td>
+                      </tr>
+                      <tr>
+                        <th>选择相应选项</th>
+                        <td>数字键0到4，0为忘记</td>
+                      </tr>
+                      <tr>
+                        <th>拼写单词</th>
+                        <td>S 键</td>
+                      </tr>
+                      <tr>
+                        <th>单词发音</th>
+                        <td>P 键</td>
+                      </tr>
+                      <tr>
+                        <th>显示词根详情（需购买智慧词根应用）</th>
+                        <td>R 键</td>
+                      </tr>
+                      <tr>
+                        <th>显示派生词信息（需购买派生词应用）</th>
+                        <td>F 键</td>
+                      </tr>
+                      <tr>
+                        <th>认识</th>
+                        <td>数字键1</td>
+                      </tr>
+                      <tr>
+                        <th>不认识</th>
+                        <td>数字键2/td></td>
+                      </tr>
+                      <tr>
+                        <th>忘记</th>
+                        <td>数字键 0</td>
+                      </tr>
+                      <tr>
+                        <th>太简单/th>
+                          <td>数字键 0</td>
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>关闭对话框</th>
+                        <td>Esc 键</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-default" type="button" data-dismiss="modal">关闭</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="intro-user">
+            <i class="fa fa-user-o"></i>
+            <span class="username">
+              <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Username
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">我的空间</a></li>
+                <li><a href="#">我的打卡</a></li>
+                <li><a href="#">我的班级</a></li>
+                <li><a href="#">我的保险</a></li>
+                <hr>
+                <li><a href="#">短信</a></li>
+                <li><a href="#">贝壳</a></li>
+                <hr>
+                <li><a href="#">设置</a></li>
+                <li><a href="#">退出</a></li>
+              </ul>
+            </span>
+          </div>
+          <div class="user-intro hide"><a href="#">登录</a> <a href="#">注册</a></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="page-list">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="words.html">单词学习</a></li>
+        <li><a href="expansion_package.html">扩展包</a></li>
+        <li><a href="#">单词书</a></li>
+        <li><a href="#">我的词库</a></li>
+        <li><a href="#">单词量测试</a></li>
+        <li><a href="#">单词进度</a></li>
+        <li><a href="#">单词设置</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="page-content">
+      <div class="content-title">
+        <span class="title-left">⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅</span> 扇贝单词
+        <span class="title-right">⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅</span>
+      </div>
+      <div class="start">
+        <div class="start-box">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="today">
+                <h2>100</h2>
+                <p>今日单词</p>
+              </div>
+              <div class="new_words">
+                <h2>0</h2>
+                <p>新词</p>
+              </div>
+              <div class="start_learn">
+                <button class="btn btn-success btn-lg">开始学习</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quote">
+          <blockquote>
+            <p>We have too many high-sounding words, and too few actions that correspond with them.
+              <br>我们有太多豪言壮语，却鲜有行动将其付诸实践。</p>
+            <small>Abigail Adams</small>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/course.js"></script>
+</body>
+
+</html>

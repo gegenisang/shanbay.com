@@ -17,30 +17,47 @@ h3 {
     margin: 0;
 }
 
-#login-page .navbar {
+.navbar {
     background-color: #209e85;
-    border-radius: 0;
+    margin-bottom: 0px;
 }
 
-#login-page .navbar a {
+.navbar .nav li a {
     color: #f5f5f5;
-    transition: color 0.2s;
+    font-size: 16px;
 }
 
-.nav>li>a:focus,
-.nav>li>a:hover {
-    text-decoration: none;
-    background-color: #209e85;
+.navbar .nav li a:hover,
+.navbar .nav li a:focus {
     color: #fff;
 }
 
-.navbar-brand,
-.navbar-brand img {
-    width: 8.4rem;
-    margin-right: 4rem;
-    vertical-align: middle;
-    margin-top: -5px;
-    /* padding-top: 0.3rem; */
+.navbar .navbar-brand img {
+    width: 100px;
+    margin-top: -10px;
+}
+
+.nav-top-left {
+    float: left;
+}
+
+.nav-top-right {
+    float: right;
+}
+
+.navbar-top-right .search-form {
+    line-height: 50px;
+}
+
+.nav-top-right .search-form,
+.nav-top-right ul,
+.nav-top-right .nav-user {
+    display: inline-block;
+}
+
+.news-content {
+    background-color: #fdfdfd;
+    padding-bottom: 120px;
 }
 
 .login-content {
@@ -53,7 +70,6 @@ h3 {
 }
 
 .left {
-    float: left;
     width: 50%;
     height: 100%;
     overflow: hidden;
@@ -127,7 +143,6 @@ h3 {
     width: 50%;
     padding: 0 70px;
     height: 560px;
-    display: inline-block;
     float: right;
     vertical-align: top;
 }
@@ -170,12 +185,6 @@ h3 {
     font-size: 22px;
     line-height: 46px;
 }
-
-
-/* .input-wrap:focus .user-icon {
-    background-image: url(../img/index/user-selected.png);
-    background-repeat: no-repeat;
-  } */
 
 input:focus {
     outline: none !important;
