@@ -124,7 +124,26 @@ body {
   }
 }
 
-// .page-content {
-//   padding: 20px;
-//   background-color: #fdfdfd;
-// }
+#word-nav {
+  padding-left: 20px;
+  padding-right: 100px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  li {
+    a {
+      border-radius: 0px;
+    }
+  }
+}
+
+#words {
+  #word {
+    display: flex;
+    background-color: #eaeaea;
+    justify-content: space-between;
+    padding: 5px 10px 20px;
+    span {
+      word-wrap: break-word;
+    }
+  }
+}
