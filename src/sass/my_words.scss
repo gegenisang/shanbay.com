@@ -1,0 +1,130 @@
+@import 'base';
+body {
+  background-color: #eee;
+}
+
+.navbar {
+  background-color: #209e85;
+  margin-bottom: 0px;
+  .nav {
+    li {
+      a {
+        color: #f5f5f5;
+        font-size: 16px;
+        &:hover,
+        &:focus {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .navbar-brand img {
+    width: 100px;
+    margin-top: -10px;
+  }
+  .navbar-form {
+    border: none;
+  }
+  #input-group {
+    border-radius: 20px;
+    border: 1px solid #FFF;
+  }
+  #search-input,
+  #clear-btn,
+  #search-btn {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    color: #FFF;
+  }
+  #search-input {
+    width: 60px;
+    padding-right: 0;
+    transition: width 0.3s;
+  }
+  #search-input::placeholder {
+    color: #FFF;
+  }
+  #clear-btn {
+    padding-right: 0;
+    padding-left: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  #clear-btn:after {
+    content: "|";
+    margin-left: 3px;
+  }
+  #search-btn {
+    padding-left: 6px;
+  }
+  #input-group.focus {
+    background: #FFF;
+    border-color: #FFF;
+  }
+  .focus #search-input {
+    width: 120px;
+    color: #333;
+  }
+  .focus #clear-btn {
+    display: table-cell;
+    color: #333;
+  }
+  .focus #search-btn {
+    color: #333;
+  }
+}
+
+#navbar .dropdown-menu a {
+  color: #333;
+}
+
+#navbar .dropdown-menu a:hover {
+  background: #209e85;
+  color: #FFF;
+}
+
+#navbar .dropdown.open>a {
+  // background: rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
+
+#page-list {
+  line-height: 40px;
+  ul,
+  li,
+  a,
+  .active,
+  .active>a {
+    border: none;
+  }
+  .nav {
+    li {
+      margin-right: 2px; // border: 2px solid transparent;
+      &.active {
+        a {
+          color: #209e85;
+          background-color: transparent;
+          border-bottom: 2px solid #209e85;
+        }
+      }
+      a {
+        color: #666;
+        border-bottom: 2px solid transparent;
+        font-size: 16px;
+        &:hover {
+          border-bottom: 2px solid #209e85;
+        }
+      }
+    }
+  }
+  .tab-content {
+    background-color: #fdfdfd;
+    padding: 20px;
+  }
+}
+
+// .page-content {
+//   padding: 20px;
+//   background-color: #fdfdfd;
+// }
