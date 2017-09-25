@@ -121,6 +121,7 @@ body {
   .tab-content {
     background-color: #fdfdfd;
     padding: 20px;
+    padding-bottom: 200px;
   }
 }
 
@@ -138,12 +139,31 @@ body {
 
 #words {
   #word {
-    display: flex;
-    background-color: #eaeaea;
-    justify-content: space-between;
     padding: 5px 10px 20px;
-    span {
-      word-wrap: break-word;
+    background-color: #eaeaea;
+    #icon {
+      margin-top: 40px;
+      i {
+        color: #fff;
+        cursor: pointer;
+      }
+      .fa-eye {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+#learn-library {
+  .btn1 {
+    a {
+      display: inline-block;
+      width: 150px;
+      height: 32px;
+      margin-top: 20px;
+      color: #fff;
+      background-color: #63a3ce;
+      line-height: 32px;
     }
   }
 }
